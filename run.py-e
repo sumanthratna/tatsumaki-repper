@@ -1,8 +1,8 @@
 import discord
-from discord.ext import commands
 import asyncio
 
 client = discord.Client()
+
 
 async def rep():
     await client.wait_until_ready()
@@ -10,6 +10,7 @@ async def rep():
     while not client.is_closed:
         await client.send_message(channel, 't!rep <@***REMOVED***>')
         await asyncio.sleep(86460)
+
 
 @client.event
 async def on_ready():
