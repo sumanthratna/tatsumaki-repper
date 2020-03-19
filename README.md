@@ -9,3 +9,18 @@ Discord can and will ban you if you use self-bots (such as the one in this repo)
 > **Automating normal user accounts (generally called "self-bots") outside of the OAuth2/bot API is forbidden, and can result in an account termination if found.**
 
 Self-bots _are_ against Discord's Terms of Services.
+
+## Setup
+
+Create the following 3 Heroku config vars:
+
+-   `DISCORD_AUTH_TOKEN`
+
+    -   [see this](https://github.com/Tyrrrz/DiscordChatExporter/wiki/Obtaining-Token-and-Channel-IDs#how-to-get-user-token)
+
+-   `DISCORD_CHANNEL_ID`
+
+    -   get this by right-clicking the channel name and clicking "Copy ID"
+
+-   `DISCORD_USER_ID`
+    -   get this by right-clicking the user's name and clicking "Copy ID"
