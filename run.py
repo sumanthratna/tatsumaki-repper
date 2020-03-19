@@ -24,4 +24,4 @@ async def on_ready():
     print('------')
 
 client.loop.create_task(rep())
-client.run(f"{DISCORD_AUTH_TOKEN}", bot=False)
+client.run(DISCORD_AUTH_TOKEN, bot=False)
