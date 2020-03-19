@@ -1,14 +1,18 @@
+import os
 import discord
 import asyncio
 
 client = discord.Client()
+DISCORD_CHANNEL_ID = os.environ['DISCORD_CHANNEL_ID']
+DISCORD_USER_ID = os.environ['DISCORD_USER_ID']
+DISCORD_AUTH_TOKEN = os.environ['DISCORD_AUTH_TOKEN']
 
 
 async def rep():
     await client.wait_until_ready()
-    channel = discord.Object(id='***REMOVED***')
+    channel = discord.Object(id=DISCORD_CHANNEL_ID)
     while not client.is_closed:
-        await client.send_message(channel, 't!rep <@***REMOVED***>')
+        await client.send_message(channel, f't!rep <@{DISCORD_USER_ID}>')
         await asyncio.sleep(86460)
 
 
@@ -20,4 +24,4 @@ async def on_ready():
     print('------')
 
 client.loop.create_task(rep())
-client.run("***REMOVED***", bot=False)
+client.run(f"{DISCORD_AUTH_TOKEN}", bot=False)
