@@ -8,6 +8,7 @@ DISCORD_CHANNEL_ID = getenv('DISCORD_CHANNEL_ID')
 DISCORD_USER_ID = getenv('DISCORD_USER_ID')
 DISCORD_AUTH_TOKEN = getenv('DISCORD_AUTH_TOKEN')
 
+
 @client.event
 async def on_ready():
     print('Logged in as')
