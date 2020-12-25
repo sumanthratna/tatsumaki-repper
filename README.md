@@ -12,7 +12,7 @@ Self-bots _are_ against Discord's Terms of Services.
 
 ## Setup
 
-Create the following 3 Heroku config vars:
+Create the following [GitHub Actions encrypted secrets](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets):
 
 -   `DISCORD_AUTH_TOKEN`
 
@@ -23,4 +23,5 @@ Create the following 3 Heroku config vars:
     -   get this by right-clicking the channel name and clicking "Copy ID"
 
 -   `DISCORD_USER_ID`
+
     -   get this by right-clicking the user's name and clicking "Copy ID"
